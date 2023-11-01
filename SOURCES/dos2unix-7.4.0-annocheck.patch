@@ -1,0 +1,12 @@
+diff -up dos2unix-7.4.0/Makefile.annocheck dos2unix-7.4.0/Makefile
+--- dos2unix-7.4.0/Makefile.annocheck	2018-09-12 14:13:45.959517746 +0200
++++ dos2unix-7.4.0/Makefile	2018-09-12 14:15:13.800825487 +0200
+@@ -358,7 +358,7 @@ ifdef LFS
+ endif
+ 
+ LDFLAGS_USER    =
+-LDFLAGS = $(RPM_OPT_FLAGS) $(LDFLAGS_EXTRA) $(LDFLAGS_USER)
++LDFLAGS = $(RPM_OPT_FLAGS) $(LDFLAGS_EXTRA) $(LDFLAGS_USER) $(RPM_LD_FLAGS)
+ LIBS    = $(LIBS_EXTRA)
+ 
+ DEFS_USER       =
